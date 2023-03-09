@@ -1,0 +1,330 @@
+/* inter-regular - latin */
+@font-face {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/inter-v12-latin-regular.eot');
+    /* IE9 Compat Modes */
+    src: local(''),
+        url('../fonts/inter-v12-latin-regular.eot?#iefix') format('embedded-opentype'),
+        /* IE6-IE8 */
+        url('../fonts/inter-v12-latin-regular.woff2') format('woff2'),
+        /* Super Modern Browsers */
+        url('../fonts/inter-v12-latin-regular.woff') format('woff'),
+        /* Modern Browsers */
+        url('../fonts/inter-v12-latin-regular.ttf') format('truetype'),
+        /* Safari, Android, iOS */
+        url('../fonts/inter-v12-latin-regular.svg#Inter') format('svg');
+    /* Legacy iOS */
+}
+
+/* inter-700 - latin */
+@font-face {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    src: url('../fonts/inter-v12-latin-700.eot');
+    /* IE9 Compat Modes */
+    src: local(''),
+        url('../fonts/inter-v12-latin-700.eot?#iefix') format('embedded-opentype'),
+        /* IE6-IE8 */
+        url('../fonts/inter-v12-latin-700.woff2') format('woff2'),
+        /* Super Modern Browsers */
+        url('../fonts/inter-v12-latin-700.woff') format('woff'),
+        /* Modern Browsers */
+        url('../fonts/inter-v12-latin-700.ttf') format('truetype'),
+        /* Safari, Android, iOS */
+        url('../fonts/inter-v12-latin-700.svg#Inter') format('svg');
+    /* Legacy iOS */
+}
+
+/* open-sans-regular - latin */
+@font-face {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/open-sans-v34-latin-regular.eot');
+    /* IE9 Compat Modes */
+    src: local(''),
+        url('../fonts/open-sans-v34-latin-regular.eot?#iefix') format('embedded-opentype'),
+        /* IE6-IE8 */
+        url('../fonts/open-sans-v34-latin-regular.woff2') format('woff2'),
+        /* Super Modern Browsers */
+        url('../fonts/open-sans-v34-latin-regular.woff') format('woff'),
+        /* Modern Browsers */
+        url('../fonts/open-sans-v34-latin-regular.ttf') format('truetype'),
+        /* Safari, Android, iOS */
+        url('../fonts/open-sans-v34-latin-regular.svg#OpenSans') format('svg');
+    /* Legacy iOS */
+}
+
+/* open-sans-700 - latin */
+@font-face {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 700;
+    src: url('../fonts/open-sans-v34-latin-700.eot');
+    /* IE9 Compat Modes */
+    src: local(''),
+        url('../fonts/open-sans-v34-latin-700.eot?#iefix') format('embedded-opentype'),
+        /* IE6-IE8 */
+        url('../fonts/open-sans-v34-latin-700.woff2') format('woff2'),
+        /* Super Modern Browsers */
+        url('../fonts/open-sans-v34-latin-700.woff') format('woff'),
+        /* Modern Browsers */
+        url('../fonts/open-sans-v34-latin-700.ttf') format('truetype'),
+        /* Safari, Android, iOS */
+        url('../fonts/open-sans-v34-latin-700.svg#OpenSans') format('svg');
+    /* Legacy iOS */
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: "Open sans";
+    background-color: rgb(224, 224, 224);
+}
+
+.d-none{
+    display: none !important;
+}
+
+/*Button*/
+.BTNnothing {
+    font-size: 1rem;
+    background: none;
+    border: none;
+    padding: 1rem;
+}
+
+.BTNblue {
+    font-size: 1rem;
+    background-color: #4589FF;
+    border: none;
+    border-radius: 1rem;
+    padding: 0.75rem;
+    color: white;
+    min-width: 80px;
+}
+
+.BTNblue:hover{
+    cursor: pointer;
+    background-color: #005DFF;
+}
+
+.simple-btn{
+    background-color: white; 
+    border-radius: 1rem;
+    border: 1px solid rgba(100, 113, 136, 1);
+    font-size: 1rem;
+    color: rgba(100, 113, 136, 1) ;
+    padding: 0.75rem;
+}
+
+.simple-btn:hover{
+    border: 1.5px solid #4589FF;
+    color:#4589FF;
+}
+
+
+/*Header Section*/
+
+.headerLeft img{
+    position: absolute;
+    top: 25px;
+    left: 50px;
+    height: 7rem;
+}
+
+.headerRight {
+    position: absolute;
+    top: 50px;
+    right: 50px;
+    display: flex;
+}
+
+
+/* Main Section*/
+
+main {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*LoginCard*/
+
+.loginCard {
+    width: 40%;
+    height: 60%;
+    border-radius: 2rem;
+    box-shadow: 0px 0px 10px 3px rgba(0, 0, 0, 0.08);
+    background: white;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+form {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1 {
+    height: 50px;
+    border-bottom: 3px solid #4589FF;
+}
+
+h2 {
+    height: 50px;
+    border-bottom: 3px solid #4589FF;
+}
+
+.inputContainer {
+    width: 100%;
+}
+
+.login-input {
+    width: 90%;
+    border: none;
+    border-bottom: 2px solid #D1D1D1;
+    margin: 20px 0 20px 0;
+}
+
+.LogIn-small-Icon{
+    width: 19px;
+    height: 19px;
+    position: relative;
+}
+
+#wrong-password{
+    display: flex;
+    width: 75%;
+    justify-content: flex-start;
+    color: red;
+    font-size: 0.7rem;
+}
+
+.password-reset-container{
+    width: 70%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 15px;
+    padding-top: 20px;
+}
+
+.checkbox-container{
+    display: flex;
+}
+
+.logIn-btn-Container{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    padding-top: 40px;
+    width: 250px;
+}
+
+
+
+/*SignUp Card*/
+
+.SignUpCard {
+    width: 40%;
+    height: 55%;
+    border-radius: 2rem;
+    box-shadow: 0px 0px 10px 3px rgba(0, 0, 0, 0.08);
+    background: white;
+    display: flex;
+    align-items: center;
+    flex-direction: column; 
+}
+
+.arrow-container{
+    display: flex;
+    position: absolute;
+    top: 150px;
+    right: 580px;
+}
+
+.formMiddle {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/*Forgot my Password Card*/
+
+.ForgotMyPasswordCard{
+    width: 40%;
+    height: 55%;
+    border-radius: 2rem;
+    box-shadow: 0px 0px 10px 3px rgba(0, 0, 0, 0.08);
+    background: white;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 30px;
+}
+
+.spanDontWorry{
+    padding-top: 30px;
+    width: 80%;
+    text-align: center;
+}
+
+
+@media(max-width:1000px){ 
+    .loginCard {
+        width: 60%;
+    }
+
+    .SignUpCard {
+        width: 60%;  
+    }
+
+    .ForgotMyPasswordCard{
+        width: 60%;
+    }
+}
+
+@media(max-width:700px){ 
+    .password-reset-container{
+        flex-direction: column;
+    }
+}
+
+@media(max-width:650px){ 
+    .headerLeft img{
+        position: absolute;
+        top: 15px;
+        left: 30px;
+        height: 5rem;
+    }
+
+    .loginCard {
+        width: 80%;
+    }
+
+    .SignUpCard {
+        width: 80%;  
+    }
+
+    h2{
+        font-size: 1em;  
+      }
+
+      .spanDontWorry{
+        font-size: 0.75rem;
+        padding-top: 10px;
+    }
+}
